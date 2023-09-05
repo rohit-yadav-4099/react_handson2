@@ -1,0 +1,66 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #c6d4ef;
+    text-align: center;
+  }
+  
+  #name{
+    width: 200px;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+  #dept{
+    width: 200px;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+  #rate{
+    width: 150px;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+  
+  .btn{
+    margin-top: 10px;
+    font-size: 20px;
+    width: 120px;
+    border-radius: 15px;
+  }
+  
+  .head{
+    font-size: 20px;
+    font-weight: 100px;
+  }
+
+  .parentdiv{
+    position: absolute;
+    width: 1200px;
+    height: auto;
+    background-color: rgb(17, 238, 165);
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    margin: 5% 10% 0% 10%;
+    justify-content: space-between;
+
+  }
+
+  .data{
+    width: auto;
+    font-size: 20px;
+    background-color: #f385c0;
+    margin:20px 15px 10px 15px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  h1{
+    color: #c90d0d;
+  }
