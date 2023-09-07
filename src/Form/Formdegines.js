@@ -25,14 +25,22 @@ class Form extends Component{
             department:this.state.department,
             rating:this.state.rating
         }
+        if(dataobj.name.length>0 && dataobj.department.length>0 && dataobj.rating.length>0){
+            this.state.dataStore.push(dataobj)
+            this.setState({
+                dataStore: this.state.dataStore,
+                name: "",
+                department: "",
+                rating: "",
+                toggle : false
+            })
+    
+            alert("submitted")
+        }
 
-        this.state.dataStore.push(dataobj)
-        this.setState({
-            dataStore: this.state.dataStore,
-            name: "",
-            department: "",
-            rating: ""
-        })
+        else{
+            alert("Blank Form not accepted")
+        }
     }
     render(){
         return(
@@ -49,19 +57,14 @@ class Form extends Component{
             </form>
 
             <div className="parentdiv">
-            {this.state.dataStore.map((Element,index) =>{
-                return(
-                    <div key={index} className="data">
-                    <span>Student's Name : {Element.name}&nbsp;||&nbsp;</span>
-                    <span>Dept. : {Element.department}&nbsp;||&nbsp;</span>
-                    <span>Rating : {Element.rating}</span>
-                </div>
-                )
-            })}
-          
-
+                {this.state.dataStore.map((Element,index) =>{
+                    return(
+                        <div key={index} className="data">
+                           <h3>Student's name:{Element.name} || Dept:{Element.department} || Rating:{Element.rating}</h3>
+                        </div>
+                    )
+                })}
            </div>
-
             </>
         )
     }
