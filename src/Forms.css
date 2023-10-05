@@ -43,18 +43,19 @@ body{
     position: absolute;
     width: 1200px;
     height: auto;
-    background-color: rgb(17, 238, 165);
+    background-color: #82d1b7;
     display: flex;
     flex-wrap: wrap;
     border: 3px solid black;
     margin: 5% 10% 0% 10%;
     justify-content: space-between;
+    border-radius: 5px;
 
   }
 
   .data{
     width: auto;
-    background-color: #f385c0;
+    background-color: #fe8ac8;
     margin:20px 15px 10px 15px;
     border-radius: 10px;
     padding: 10px;
