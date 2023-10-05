@@ -57,14 +57,17 @@ class Form extends Component{
             </form>
 
             <div className="parentdiv">
-                {this.state.dataStore.map((Element,index) =>{
-                    return(
-                        <div key={index} className="data">
-                           <h3>Student's name:{Element.name} || Dept:{Element.department} || Rating:{Element.rating}</h3>
-                        </div>
-                    )
-                })}
+            {this.state.dataStore.map((Element,index) =>{
+                return(
+                    <div key={index} className="data">
+                   <h3>Name:{Element.name} || Dept:{Element.department} || Rating:{Element.rating}</h3>
+                </div>
+                )
+            })}
+          
+
            </div>
+
             </>
         )
     }
